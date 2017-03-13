@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Speech Shape</title>
+    <style>
+        div {
+            background-color: lightblue;
+            width: 150px;
+            height: 100px;
+            margin: 100px;
+            border-radius: 20px;
+        }
+        div:after { /* to make the bubble shape*/
+            content: ' '; /* must be provided to understand browser to some content is there*/
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            left: 80px;
+            top: 113px;
+            border-top: 23px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-right: 33px solid lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
